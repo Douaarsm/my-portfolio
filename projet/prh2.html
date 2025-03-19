@@ -1,0 +1,103 @@
+<style>
+    /* Styles généraux */
+    .promo-section {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: #fff;
+    }
+    
+    /* Image */
+    .promo-section img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    /* Contenu */
+    .promo-content {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .promo-content p {
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #ff6b6b;
+    }
+    
+    .promo-content h2 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-top: 10px;
+        color: #333;
+    }
+    
+    .promo-content h2 span {
+        display: block;
+        font-size: 1rem;
+        color: #666;
+    }
+    
+    /* Bouton */
+    .promo-button {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 12px 24px;
+        background-color: #000;
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .promo-button:hover {
+        background-color: #333;
+    }
+    
+    /* Texte du bas */
+    .promo-footer {
+        margin-top: 1.5rem;
+        font-size: 0.75rem;
+        color: #888;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+        .promo-section {
+            grid-template-columns: 1fr;
+        }
+        .promo-section img {
+            height: 200px;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+    </style>
+    
+    <section class="promo-section">
+        <img
+            alt="Promo Image"
+            src="https://images.unsplash.com/photo-1611510338559-2f463335092c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+        />
+        
+        <div class="promo-content">
+            <p>Run with the pack</p>
+            <h2>Get 20% off <span>On your next order over $50</span></h2>
+            <a class="promo-button" href="#">Get Discount</a>
+            <p class="promo-footer">Offer valid until 24th March, 2021 *</p>
+        </div>
+    </section>
+    
